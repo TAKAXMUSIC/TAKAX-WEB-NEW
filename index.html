@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takax Music</title>
+    <!-- <link rel="stylesheet" href="TAKAX MUSIC Renewal Page_sp.css"> -->
+
+    <style>
+
+        body{
+            margin: 0;
+            display: grid;
+            grid-template-rows: 10vh 63vh 50vh 460vh 30vh;
+            grid-template-columns: 100%;
+            background-color: rgb(0, 0, 0);
+        }
+
+        h1,h2{
+            padding-left: 3vh;
+            color: white;
+            /* border-bottom: 2px solid rgb(255, 255, 255); */
+        }
+        /* ↓リンク */
+        a:link{
+        color:rgb(119, 151, 255);
+        text-decoration: none;
+        }
+        a:hover{
+        background-color:rgba(255, 255, 255, 0.342) ;
+        color: rgb(173, 173, 173);
+        }
+        a:visited{
+        color:rgba(152, 152, 152, 0.587);
+        }
+
+        header{
+            grid-row: 1/2;
+            grid-column: 1/2;
+            background-color: rgb(0, 0, 0);
+        }
+        header>img{
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        aside{
+            grid-row: 2/3;
+            grid-column: 1/2;
+            
+            /* ↓長さの確認時に解除 */
+            /* background-color: rgb(117, 222, 105); */
+        }
+        .update{
+            text-align: center;
+            color: white;
+        }
+        
+        nav{
+            grid-row: 3/4;
+            grid-column: 1/2;
+            
+            /* ↓長さの確認時に解除 */
+            /* background-color: rgb(241, 139, 130); */
+        }
+        .newvideo{
+            text-align: center;
+            color: white;
+        }
+        .video{
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+            padding: 0 5vh 0 5vh;
+        }
+
+        main{
+            grid-row: 4/5;
+            grid-column: 1/2;
+
+            /* ↓長さの確認時に解除 */
+            background-color: rgb(0, 174, 255);
+        }
+
+        footer{
+            grid-row: 5/6;
+            grid-column: 1/2;
+            background-color: rgb(143, 178, 248);
+            text-align: center;
+        }
+        footer div{
+            width: 80%;
+            height: auto;
+            font-size: 50%;
+            padding: 0 5vh 0 5vh;
+        }
+        
+        /* index_css */
+        #cont-1,
+        #cont-2,
+        #cont-3,
+        #cont-4,
+        #cont-5{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        /* ↓背景写真 */
+        padding-top: 30vh;
+        }
+
+        #cont-6{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+                /* ↓背景写真 */
+                padding-top: 30vh;
+        }
+
+        #cont-1{
+            background-image: url(images/Summer.png);
+        }
+        #cont-2{
+            background-image: url(images/Relax.png);
+        }
+        #cont-3{
+            background-image: url(images/Coffee\ chill.png);
+        }
+        #cont-4{
+            background-image: url(images/catsMeeting.png);
+        }
+        #cont-5{
+            background-image: url(images/Camp.png);
+        }
+        #cont-6{
+            background-image: url(images/夜山.png);
+        }
+        
+        #cont-6>div{
+            padding: 0 30px 0 30px ;
+        }
+
+        #cont-1>div,
+        #cont-2>div,
+        #cont-3>div,
+        #cont-4>div,
+        #cont-5>div{
+            background-color: rgb(0, 0, 0);
+            padding: 2vh 0 2vh 0;
+        }
+
+        
+        /* ↓テーブル */
+        .cont-equ table{
+            width: 600px;
+            /* ↓線を圧縮して一本線にする */
+            border-collapse: collapse;
+            margin: auto;
+        }
+        .cont-equ th,
+        .cont-equ td{
+            padding: 10px;
+            text-align: center;
+        }
+        /* ↑テーブル */
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://user-images.githubusercontent.com/119456328/205171697-dabcb502-55c9-49a0-be62-d0b2760faac3.jpg">
+    </header>
+
+    <aside>
+        <h1>Music List</h1>
+        <ul>
+            <li><a href="#Beat">Beat Music</a></li>
+            <li><a href="#Lo-Fi">Lo-Fi Beats</a></li>
+            <li><a href="#Wagakki">Wagakki - Shamisen Beats</a></li>
+            <li><a href="#Piano">Piano</a></li>
+            <li><a href="#Free">Free To Use</a></li>
+        </ul>
+
+        <h1>Contact</h1>
+        <ul>
+            <li><a href="https://www.youtube.com/channel/UC7hE2BE8Cf-7aqFawvWrHxQ">TAKAX MUSIC</a></li>
+            <li><a href="https://twitter.com/TakaxMusic_" target="_blank">Twitter</a></li>
+            <li><a href="https://www.instagram.com/takax_music/" target="_blank">Instagram</a></li>
+            <li><a href="https://soundcloud.com/takax-music" target="_blank">SoundCloud</a></li>
+        </ul>
+
+        <div class="update">
+            <!-- アイコン追加 -->
+            <p>Update: 06/2023</p>
+        </div>
+        </aside>
+
+    <nav>
+        <h1>Information</h1>
+        <div class="newvideo">
+            <p>NEW VIDEO</p>
+            <div>
+                <p>Summer Mix</p>
+            </div>
+        </div>
+
+        <!-- youtube -->
+        <div class="video">
+            <!-- 自動再生→ urlに ?autoplay=1 を追加 -->
+            <!-- ループ再生 ?loop=1&playlist=動画ID IDはembed/の最後部分 -->
+        <iframe src="https://www.youtube.com/embed/d2vJfi9QG9A?autoplay=1" 
+            title="Summer Mix" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+        </div>
+    </nav>
+
+    <main>
+
+    <article id="cont-1">
+        <div>
+            <h2 id="Beat">Beat Music</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=d2vJfi9QG9A&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=1" target="_blank">Summer Mix</a></li>
+                <li><a href="https://www.youtube.com/watch?v=XxjWosF0wNA&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=2" target="_blank">The Winter II</a></li>
+                <li><a href="https://www.youtube.com/watch?v=CvO8WpUAgx0&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=3" target="_blank">MOB Violent</a></li>
+                <li><a href="https://www.youtube.com/watch?v=GSc4nudIrOA&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=4" target="_blank">The Winter</a></li>
+                <li><a href="https://www.youtube.com/watch?v=yrMhjD_Hi2w&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=5" target="_blank">On My Way</a></li>
+                <li><a href="https://www.youtube.com/watch?v=vrUDJ25uFYk&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=7" target="_blank">Purple Sky</a></li>
+                <li><a href="https://www.youtube.com/watch?v=vrUDJ25uFYk&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=7" target="_blank">Summer Beach</a></li>
+                <li><a href="https://www.youtube.com/watch?v=op0SXwTpWOA&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=8" target="_blank">Summer Disco</a></li>
+                <li><a href="https://www.youtube.com/watch?v=5fiiIUAJtC4&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=4" target="_blank">MOB</a></li>
+                <li><a href="https://www.youtube.com/watch?v=GoSABNR1Q0E&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=5" target="_blank">Town Network</a></li>
+                <li><a href="https://www.youtube.com/watch?v=kAQgQERdPrw&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=6" target="_blank">Breakthrough Advanced</a></li>
+                <li><a href="https://www.youtube.com/watch?v=qY8Pt6nMT5o&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=7" target="_blank">Shooting Reloaded Edition</a></li>
+                <li><a href="https://www.youtube.com/watch?v=TCp-7IMnDS4&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=8" target="_blank">Breakthrough</a></li>
+                <li><a href="https://www.youtube.com/watch?v=OUbRO1yIctE&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=11" target="_blank">My Way Concentrated Edition</a></li>
+                <li><a href="https://www.youtube.com/watch?v=nPcUHIL0bkg&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=13" target="_blank">The Second Wave</a></li>
+                <li><a href="https://www.youtube.com/watch?v=7B2AuHNhnW0&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=14" target="_blank">Trial And Error</a></li>
+                <li><a href="https://www.youtube.com/watch?v=wjDkUlyK7dA&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=15" target="_blank">Pandemic</a></li>
+                <li><a href="https://www.youtube.com/watch?v=8xHM-pa5Rrw&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=18" target="_blank">MORE FORWARD</a></li>
+                <li><a href="https://www.youtube.com/watch?v=5VuhWJ2IWCY&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=20" target="_blank">Shooting</a></li>
+                <li><a href="https://www.youtube.com/watch?v=-CekoLqAagI&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=22" target="_blank">My way</a></li>
+            </ul>
+        </div>
+    </article>
+
+    <article id="cont-2">
+        <div>
+            <h2 id="Lo-Fi">Lo-Fi Beats</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=Eej9zneMePE&list=PLEmsMKDtatMWyDoDrcGvZWqFmcwd6f2GE&index=4" target="_blank">Snow in the mclassnight</a></li>
+                <li><a href="https://www.youtube.com/watch?v=i2JnEfcills&list=PLEmsMKDtatMWyDoDrcGvZWqFmcwd6f2GE&index=3" target="_blank">Blue sky</a></li>
+                <li><a href="https://www.youtube.com/watch?v=RstKAYiCETc&list=PLEmsMKDtatMWyDoDrcGvZWqFmcwd6f2GE&index=5" target="_blank">Come Back Home</a></li>
+                <li><a href="https://www.youtube.com/watch?v=pBQ1LLiq8_4&list=PLEmsMKDtatMWyDoDrcGvZWqFmcwd6f2GE&index=2" target="_blank">Staying up late</a></li>
+                <li><a href="https://www.youtube.com/watch?v=iiOzoSkmqgc&list=PLEmsMKDtatMWyDoDrcGvZWqFmcwd6f2GE&index=1" target="_blank">Commuting Time</a></li>
+            </ul>
+        </div>
+    </article>
+
+    <article id="cont-3">
+        <div>
+            <h2 id="Wagakki">Wagakki</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=-pNwriEUm0A&list=PLEmsMKDtatMVhBt4utVdOKC1f0gKsK7ay&index=3" target="_blank">松 Matsu</a></li>
+                <li><a href="https://www.youtube.com/watch?v=RXl3RUobRCs&list=PLEmsMKDtatMVhBt4utVdOKC1f0gKsK7ay&index=1" target="_blank">Shamisen Beat</a></li>
+                <li><a href="https://www.youtube.com/watch?v=RHz4xySvgxc&list=PLEmsMKDtatMVhBt4utVdOKC1f0gKsK7ay&index=2" target="_blank">Shamisen Beat 2</a></li>  
+            </ul>
+        </div>
+    </article>
+
+    <article id="cont-4">
+        <div>
+            <h2 id="Free">Free To Use</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=FBWDzf-0nKk&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_" target="_blank">Neko</a></li>
+                <li><a href="https://www.youtube.com/watch?v=HzmD4ghRMSk&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_&index=2" target="_blank">Dreaming</a></li>
+                <li><a href="https://www.youtube.com/watch?v=HPpTL87hu_g&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_&index=7" target="_blank">Good Night</a></li>
+                <li><a href="https://www.youtube.com/watch?v=Bk5tNOETk1E&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_&index=12" target="_blank">Sprout</a></li>
+                <li><a href="https://www.youtube.com/watch?v=k0Y4DGJzxYA&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_&index=22" target="_blank">Tango Strings</a></li>
+                <li><a href="https://www.youtube.com/watch?v=YuZAhQb1oCI&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_&index=23" target="_blank">Mystery</a></li>
+                <li><a href="https://www.youtube.com/watch?v=Qxtnvp6PTtQ&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_&index=33" target="_blank">OASIS</a></li>
+                <li><a href="https://www.youtube.com/watch?v=cs9QS9RBw6A&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_&index=32" target="_blank">Into the Maze</a></li>
+                <li><a href="https://www.youtube.com/watch?v=q6caKiZGCk4&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_&index=35" target="_blank">STEPS</a></li>
+                <li><a href="https://www.youtube.com/watch?v=kSdvXexiudY&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_&index=16" target="_blank">BGM 4</a></li>
+                <li><a href="https://www.youtube.com/watch?v=m-qWSfIgC2U&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_&index=18" target="_blank">BGM 5</a></li>
+                <li><a href="https://www.youtube.com/watch?v=Dk0YRpc78L8&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_&index=27" target="_blank">BGM 3</a></li>
+                <li><a href="https://www.youtube.com/watch?v=6YHXCW03fmU&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_&index=30" target="_blank">BGM 1</a></li>
+            </ul>
+        </div>
+    </article>
+
+    <article id="cont-5">
+        <div>
+            <h2 id="Piano">Piano</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=BGwgb4NxPPg&list=PLEmsMKDtatMUbSjmuBD4-aTMWSK0WUUJQ" target="_blank">Trial And Error Piano Edition</a></li>
+            </ul>
+        </div>
+    </article>
+
+    <article id="cont-6">
+        <h2>Twitter</h2>
+            <div>
+                <a href="https://twitter.com/TakaxMusic_?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @TakaxMusic_</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            
+                <a class="twitter-timeline" data-width="400px" data-height="200px" data-theme="light" href="https://twitter.com/TakaxMusic_?ref_src=twsrc%5Etfw">Tweets by TakaxMusic_</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+    </article>
+
+    </main>
+
+    <footer>
+        <h3>Music Equipment</h3>
+        <div class="cont-equipment">
+            <table>
+            <tr>
+                <th>Software</th>
+                <th>Main Machine</th>
+                <th colspan="2">Monitor Headphones / Earphones</th>
+            </tr>
+            <tr>
+                <td>Ableton Live</td>
+                <td>Windows Surface Pro</td>
+                <td>Shure SRH440 <br>Shure Aonic50</td>
+                <td>Shure SE215 <br>Final Audio E4000</td>
+            </tr>
+            </table>
+        </div>
+    </footer>
+</body>
+
+</html>
