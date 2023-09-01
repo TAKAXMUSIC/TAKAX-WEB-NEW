@@ -14,6 +14,7 @@
             grid-template-rows: 10vh 63vh 50vh 460vh 30vh;
             grid-template-columns: 100%;
             background-color: rgb(0, 0, 0);
+            font-size: 20px;
         }
 
         h1,h2{
@@ -86,13 +87,16 @@
         footer{
             grid-row: 5/6;
             grid-column: 1/2;
-            background-color: rgb(143, 178, 248);
+            background-color: rgb(0, 0, 0);
+            color: white;
             text-align: center;
+            /* ↓長さの確認時に解除 */
+            /* background-color: rgb(0, 174, 255); */
         }
         footer div{
             width: 80%;
             height: auto;
-            font-size: 50%;
+            font-size: 10px;
             padding: 0 5vh 0 5vh;
         }
         
@@ -115,8 +119,8 @@
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
-                /* ↓背景写真 */
-                padding-top: 30vh;
+        /* ↓背景写真 */
+        padding-top: 30vh;
         }
 
         #cont-1{
@@ -193,7 +197,7 @@
 
         <div class="update">
             <!-- アイコン追加 -->
-            <p>Update: 08/2023</p>
+            <p>Update: 09/2023</p>
         </div>
         </aside>
 
@@ -202,6 +206,7 @@
         <div class="newvideo">
             <p>NEW VIDEO</p>
             <div>
+                <!-- ↓動画のタイトル↓ -->
                 <p>Cyber City</p>
             </div>
         </div>
@@ -210,11 +215,10 @@
         <div class="video">
             <!-- 自動再生→ urlに ?autoplay=1 を追加 -->
             <!-- ループ再生 ?loop=1&playlist=動画ID IDはembed/の最後部分 -->
-        <iframe src="https://www.youtube.com/watch?v=ofiio7tj_Zs&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=1?autoplay=1" 
-            title="Summer Mix" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-        </iframe>
+            <iframe width="300" height="157" src="https://www.youtube.com/embed/ofiio7tj_Zs?si=epLhczWfVR2qwA3-" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen></iframe>
         </div>
     </nav>
 
@@ -304,12 +308,13 @@
     </article>
 
     <article id="cont-6">
-        <h2>Twitter</h2>
+        <!-- ↓将来的にTwitter画面を追加↓ -->
+        <!-- <h2>Twitter</h2>
             <div>
                 <a href="https://twitter.com/TakaxMusic_?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @TakaxMusic_</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             
                 <a class="twitter-timeline" data-width="400px" data-height="200px" data-theme="light" href="https://twitter.com/TakaxMusic_?ref_src=twsrc%5Etfw">Tweets by TakaxMusic_</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
+            </div> -->
     </article>
 
     </main>
