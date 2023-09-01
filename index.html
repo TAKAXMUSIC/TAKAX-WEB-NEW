@@ -8,6 +8,12 @@
 
     <style>
 
+        /* ↓横スクロール強制非表示↓ */
+        html
+        {
+            overflow-x: hidden;
+        }
+
         body{
             margin: 0;
             display: grid;
@@ -15,6 +21,7 @@
             grid-template-columns: 100%;
             background-color: rgb(0, 0, 0);
             font-size: 20px;
+            overflow-x: hidden;
         }
 
         h1,h2{
@@ -22,9 +29,11 @@
             color: white;
             /* border-bottom: 2px solid rgb(255, 255, 255); */
         }
+
+        
         /* ↓リンク */
         a:link{
-        color:rgb(119, 151, 255);
+            color:rgb(119, 151, 255);
         text-decoration: none;
         }
         a:hover{
@@ -32,9 +41,9 @@
         color: rgb(173, 173, 173);
         }
         a:visited{
-        color:rgba(152, 152, 152, 0.587);
+            color:rgba(152, 152, 152, 0.587);
         }
-
+        
         header{
             grid-row: 1/2;
             grid-column: 1/2;
@@ -45,7 +54,7 @@
             max-width: 100%;
             height: auto;
         }
-
+        
         aside{
             grid-row: 2/3;
             grid-column: 1/2;
@@ -70,12 +79,15 @@
             color: white;
         }
         .video{
-            width: 90%;
+            width: 95%;
             height: auto;
             margin: 0 auto;
-            padding: 0 5vh 0 5vh;
+            display: block;
+            /* padding: 5px 5px 5px 5px; */
+            /* ↓長さの確認時に解除 */
+            background-color: rgb(255, 255, 255);
         }
-
+        
         main{
             grid-row: 4/5;
             grid-column: 1/2;
@@ -83,7 +95,7 @@
             /* ↓長さの確認時に解除 */
             /* background-color: rgb(0, 174, 255); */
         }
-
+        
         footer{
             grid-row: 5/6;
             grid-column: 1/2;
@@ -97,23 +109,19 @@
             width: 80%;
             height: auto;
             font-size: 10px;
-            padding: 0 5vh 0 5vh;
+            padding: 0 5vh 5vh 5vh;
         }
         
+        h4{
+            font-size: 15px;
+        }
+
         /* index_css */
         #cont-1,
         #cont-2,
         #cont-3,
         #cont-4,
-        #cont-5{
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        /* ↓背景写真 */
-        padding-top: 30vh;
-        }
-
+        #cont-5,
         #cont-6{
         background-repeat: no-repeat;
         background-position: center;
@@ -142,10 +150,7 @@
             background-image: url(https://github.com/TAKAXMUSIC/TAKAX-WEB-NEW/assets/119456328/f95639f7-2334-48d1-bf7d-c34c22956488);
         }
         
-        #cont-6>div{
-            padding: 0 30px 0 30px ;
-        }
-
+        
         #cont-1>div,
         #cont-2>div,
         #cont-3>div,
@@ -154,12 +159,15 @@
             background-color: rgb(0, 0, 0);
             padding: 2vh 0 2vh 0;
         }
-
+        
+        #cont-6>div{
+            padding: 0 30px 0 30px ;
+        }
         
         /* ↓テーブル */
-        .cont-equ table{
+        /* .cont-equ table{
             width: 600px;
-            /* ↓線を圧縮して一本線にする */
+            ↓線を圧縮して一本線にする
             border-collapse: collapse;
             margin: auto;
         }
@@ -167,7 +175,7 @@
         .cont-equ td{
             padding: 10px;
             text-align: center;
-        }
+        } */
         /* ↑テーブル */
 
     </style>
@@ -215,7 +223,8 @@
         <div class="video">
             <!-- 自動再生→ urlに ?autoplay=1 を追加 -->
             <!-- ループ再生 ?loop=1&playlist=動画ID IDはembed/の最後部分 -->
-            <iframe width="300" height="157" src="https://www.youtube.com/embed/ofiio7tj_Zs?si=epLhczWfVR2qwA3-" 
+            <!-- width="390px" height="220px" -->
+            <iframe width="390px" height="220px" src="https://www.youtube.com/embed/ofiio7tj_Zs?si=epLhczWfVR2qwA3-?autoplay=1" 
             title="YouTube video player" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             allowfullscreen></iframe>
@@ -322,7 +331,19 @@
     <footer>
         <h3>Music Equipment</h3>
         <div class="cont-equipment">
-            <table>
+
+            <h4>Software</h4>
+            <p>Ableton Live 11</p>
+            <h4>Main Machine</h4>
+            <p>Windows Surface Pro</p>
+            <p>DAIV Z4</p>
+            <h4>Monitor</h4>
+            <p>Shure SRH440</p>
+            <p>Shure Aonic50</p>
+            <p>Shure SE215</p>
+            <p>Final Audio E4000</p>
+
+            <!-- <table>
             <tr>
                 <th>Software</th>
                 <th>Main Machine</th>
@@ -334,7 +355,7 @@
                 <td>Shure SRH440 <br>Shure Aonic50</td>
                 <td>Shure SE215 <br>Final Audio E4000</td>
             </tr>
-            </table>
+            </table> -->
         </div>
     </footer>
 </body>
